@@ -16,7 +16,6 @@
         </div>
     </div>
     </div>
-    <!-- Hero Area End -->
     <!-- job post company Start -->
     <div class="job-post-company pt-120 pb-120">
         <div class="container">
