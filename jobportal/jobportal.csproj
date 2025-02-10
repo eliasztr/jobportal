@@ -221,6 +221,7 @@
     <Content Include="user\default.aspx" />
     <Content Include="user\jobdetails.aspx" />
     <Content Include="user\joblisting.aspx" />
+    <Content Include="user\register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -260,8 +261,16 @@
     <Compile Include="user\joblisting.aspx.designer.cs">
       <DependentUpon>joblisting.aspx</DependentUpon>
     </Compile>
+    <Compile Include="user\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="user\usermaster.Master.cs">
       <DependentUpon>usermaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="user\usermaster.Master.designer.cs">
       <DependentUpon>usermaster.Master</DependentUpon>
