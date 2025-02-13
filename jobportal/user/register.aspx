@@ -3,6 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <section>
+        <style>
+            .clicklink a{    color:highlight;    font-family:"Barlow",sans-serif;    font-weight:500;    font-size:15px;}    .clicklink a:hover {        color:#fb246a;    }
+        </style>
         <div class="container pt-50 pb-40">
 
             <div class="row">
@@ -27,14 +30,14 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Password</label>
-                                <asp:TextBox ID="txtpassword" runat="server" CssClass="form-control" placeholder="Enter password" required="required"></asp:TextBox>
+                                <asp:TextBox ID="txtpassword" runat="server" CssClass="form-control" placeholder="Enter password" TextMode="Password" required="required"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>confirm password</label>
                                 <asp:TextBox ID="txtconfirmpassword" runat="server" CssClass="form-control" placeholder="Confirm Password" required="required"></asp:TextBox>
-                                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="does not match" ControlToCompare="txtpassword" ControlToValidate="txtconfirmpassword" ForeColor="Red" Display="Dynamic" SetFocusOnError="true" Font-Size="Small"></asp:CompareValidator>
+                                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="does not match" ControlToCompare="txtpassword" ControlToValidate="txtconfirmpassword" TextMode="Password" ForeColor="Red" Display="Dynamic" SetFocusOnError="true" Font-Size="Small"></asp:CompareValidator>
                             </div>
                         </div>
                         <div class="col-12">
@@ -50,7 +53,7 @@
                         <div class="col-12">
                             <div class="form-group">
                                 <label>Address</label>
-                                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="Enter address" required="required" TextMode="MultiLine"></asp:TextBox>
+                                <asp:TextBox ID="txtaddress" runat="server" CssClass="form-control" placeholder="Enter address" required="required" TextMode="MultiLine"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-12">
@@ -84,8 +87,9 @@
                     </div>
                     <div class="form-group mt-3">
                         <asp:Button ID="btnregister" runat="server" Text="Register" CssClass="button button-contactForm boxed-btn" OnClick="btnregister_Click" />
-
+                       
                     </div>
+                     <span class="clicklink"> <a href="../user/login.aspx"> Already have an account!</a></span>
 
                 </div>
             </div>
