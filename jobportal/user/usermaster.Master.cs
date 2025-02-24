@@ -47,6 +47,7 @@ namespace jobportal.user
                 Session.Abandon();
                 Response.Redirect("login.aspx");
             }
+
         }
     }
 }

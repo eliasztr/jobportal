@@ -83,7 +83,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\contactlist.aspx" />
     <Content Include="admin\dashboard.aspx" />
+    <Content Include="admin\joblist.aspx" />
     <Content Include="admin\newjob.aspx" />
     <Content Include="assets\css\animate.min.css" />
     <Content Include="assets\css\bootstrap.min.css" />
@@ -197,6 +199,7 @@
     <Content Include="assets\img\prising\7.png" />
     <Content Include="assets\img\prising\8.png" />
     <Content Include="assets\img\prising\9.png" />
+    <Content Include="assets\img\profile.png" />
     <Content Include="assets\img\service\1.png" />
     <Content Include="assets\img\service\2.png" />
     <Content Include="assets\img\service\3.png" />
@@ -240,7 +243,9 @@
     <Content Include="user\jobdetails.aspx" />
     <Content Include="user\joblisting.aspx" />
     <Content Include="user\login.aspx" />
+    <Content Include="user\profile.aspx" />
     <Content Include="user\register.aspx" />
+    <Content Include="user\resumebuild.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -251,12 +256,26 @@
     <Compile Include="admin\adminmaster.Master.designer.cs">
       <DependentUpon>adminmaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="admin\contactlist.aspx.cs">
+      <DependentUpon>contactlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\contactlist.aspx.designer.cs">
+      <DependentUpon>contactlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\dashboard.aspx.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\joblist.aspx.cs">
+      <DependentUpon>joblist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\joblist.aspx.designer.cs">
+      <DependentUpon>joblist.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\newjob.aspx.cs">
       <DependentUpon>newjob.aspx</DependentUpon>
@@ -308,12 +327,26 @@
     <Compile Include="user\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="user\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="user\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="user\register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\resumebuild.aspx.cs">
+      <DependentUpon>resumebuild.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\resumebuild.aspx.designer.cs">
+      <DependentUpon>resumebuild.aspx</DependentUpon>
     </Compile>
     <Compile Include="user\usermaster.Master.cs">
       <DependentUpon>usermaster.Master</DependentUpon>
@@ -322,6 +355,7 @@
     <Compile Include="user\usermaster.Master.designer.cs">
       <DependentUpon>usermaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\fonts\fa-brands-400.eot" />
@@ -381,7 +415,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="resume\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

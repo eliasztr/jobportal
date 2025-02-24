@@ -5,12 +5,19 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="width: 100%; height: 720px; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
         <div class="container pt-4 pb-4">
-            <div>
-                <asp:Label ID="lblmsg" runat="server"></asp:Label>
+            <div class="btn-toolbar justify-content-between mb-3">
+                <div class="btn-group">
+                    <asp:Label ID="lblmsg" runat="server"></asp:Label>
+                </div>
+                <div class="input-group h-25">
+                    <asp:HyperLink ID="linkback" runat="server" NavigateUrl="~/admin/joblist.aspx" CssClass="btn btn-secondary" Visible="false">< back</asp:HyperLink>
 
+                </div>
             </div>
+
+
             <div>
-                <h3 class="text-center">Add job</h3>
+                <h3 class="text-center"><%Response.Write(Session["title"]);  %></h3>
                 <div class="row mr-lg-5 ml-lg-5 mb-3">
                     <div class="col-md-6 pt-3">
                         <label for="txtjobtitle" style="font-weight: 600">job title </label>
@@ -128,7 +135,7 @@
 
                  <div class="row mr-lg-5 ml-lg-5 mb-3 pt-4">
      <div class="col-md-3 col-md-offset-2 mb-3">
-         <asp:Button ID="btnaddjob" runat="server" Text="add job" OnClick="btnaddjob_Click" CssClass="btn btn-primary btn-block " BackColor="#7200cf" />
+         <asp:Button ID="btnaddjob" runat="server" Text="add job" OnClick="btnaddjob_Click" CssClass="btn btn-primary btn-block " BackColor="#7200cf"  />
      </div>
             </div>
               
