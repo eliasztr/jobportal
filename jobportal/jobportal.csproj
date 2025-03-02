@@ -87,6 +87,7 @@
     <Content Include="admin\dashboard.aspx" />
     <Content Include="admin\joblist.aspx" />
     <Content Include="admin\newjob.aspx" />
+    <Content Include="admin\viewresume.aspx" />
     <Content Include="assets\css\animate.min.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\flaticon.css" />
@@ -284,6 +285,16 @@
     <Compile Include="admin\newjob.aspx.designer.cs">
       <DependentUpon>newjob.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\viewresume.aspx.cs">
+      <DependentUpon>viewresume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\viewresume.aspx.designer.cs">
+      <DependentUpon>viewresume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadResume.ashx.cs">
+      <DependentUpon>DownloadResume.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="user\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>
@@ -406,6 +417,7 @@
     <Content Include="assets\scss\_testimonial.scss" />
     <Content Include="assets\scss\_variables.scss" />
     <Content Include="admin\adminmaster.Master" />
+    <Content Include="DownloadResume.ashx" />
     <None Include="packages.config" />
     <Content Include="user\usermaster.Master" />
     <None Include="Web.Debug.config">

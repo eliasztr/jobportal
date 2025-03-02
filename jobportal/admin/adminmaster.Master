@@ -72,7 +72,7 @@
             <a href="dashboard.aspx"><i class="fas fa-home"></i> Dashboard</a>
             <a href="newjob.aspx"><i class="fas fa-briefcase"></i> New Job</a>
             <a href="joblist.aspx"><i class="fas fa-list"></i> Job List</a>
-            <a href="#"><i class="fas fa-file-alt"></i> View Resume</a>
+            <a href="viewresume.aspx"><i class="fas fa-file-alt"></i> View Resume</a>
             <a href="contactlist.aspx"><i class="fas fa-envelope"></i> Contact List</a>
         </div>
 
