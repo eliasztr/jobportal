@@ -65,12 +65,8 @@
                                                 <li><a href="default.aspx">Home</a></li>
                                                 <li><a href="joblisting.aspx">Find a Job </a></li>
                                                 <li><a href="about.aspx">About</a></li>
-                                                <li><a href="#">Page</a>
-                                                    <ul class="submenu">
-                                                        
-                                                        <li><a href="jobdetails.aspx">job Details</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="jobdetails.aspx">Job Details</a></li>
+                                              
                                                 <li><a href="contact.aspx">Contact</a></li>
                                             </ul>
                                         </nav>

@@ -74,6 +74,7 @@
             <a href="joblist.aspx"><i class="fas fa-list"></i> Job List</a>
             <a href="viewresume.aspx"><i class="fas fa-file-alt"></i> View Resume</a>
             <a href="contactlist.aspx"><i class="fas fa-envelope"></i> Contact List</a>
+            <a href="userlist.aspx"><i class="fas fa-envelope"></i> User List</a>
         </div>
 
         <!-- Main Content -->
